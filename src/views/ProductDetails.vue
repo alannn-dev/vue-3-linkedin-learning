@@ -23,6 +23,7 @@
             <td>Total à payer</td>
 
             <td>
+              <!-- Transition component -->
               <transition name="bounce">
                 <div v-if="promo === 'royale'">
                   (-5€)
@@ -67,14 +68,16 @@
           </span>
         </div>
         <br />
+        
         <div class="sauces">
           <strong>Sauces au choix</strong>
           <ul>
+         <!-- Liaison de :style="" -->
             <li
               v-for="(sauce, index) in sauces"
               :key="index"
               @mouseover="updateImage(sauce.image)"
-              :style="{ backgroundColor: sauce.color }"
+              :style="{ backgroundColor: sauce.color }"  
             >
               {{ sauce.type }}
             </li>
@@ -94,7 +97,7 @@
           v-bind:class="{ notActiveBtn: notAvailable }"
           @click="addProduct()"
           :disabled="notAvailable"
-        >
+        > <!-- Liaison de :class="" -->
           Ajouter à ma commande
         </button>
         <br /><br />
