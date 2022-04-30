@@ -1,9 +1,9 @@
 <template>
   <nav id="header">
-    <router-link :to="{ name: 'Home' }">HOME</router-link>
-    <router-link :to="{ name: 'Contact' }">CONTACT</router-link>
+    <router-link :to="{ name: 'Home' }">HOME</router-link> <!-- :to pour créer lien vers la page -->
+    <router-link :to="{ name: 'Contact' }">CONTACT</router-link> <!-- Route nommées utilise pour modifs -->
   </nav>
-  <router-view />
+  <router-view /> <!-- Rendu du composant -->
 </template>
 
 <script>
