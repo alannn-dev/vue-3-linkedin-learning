@@ -4,7 +4,9 @@
     <p>PROMOTION SUR LA 4 FROMAGE</p>
     <p>NOUVEAUTE - PIZZA ROYALE</p>
     <p>JEU CONCOURS</p>
+        <Likes />
   </div>
+  
   <div id="product-menu">
     <Products />
   </div>
